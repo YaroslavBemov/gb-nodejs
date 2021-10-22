@@ -11,6 +11,7 @@
   "author": "Yaroslav Bemov <yaroslav.bemov@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "prime-number": "^1.0.2"
   }
 }
