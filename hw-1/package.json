@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "Yaroslav Bemov <yaroslav.bemov@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }
