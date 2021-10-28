@@ -1,4 +1,5 @@
 const colors = require('colors')
+const moment = require('moment')
 
 class Handler {
   static setTimer(payload) {
@@ -10,7 +11,11 @@ class Handler {
         console.log(`Timer ${title} finish`.red)
         clearInterval(intervalId)
       } else {
-        console.log(`Timer ${title} - remain ${count--} seconds...`.green)
+        const hour = moment(count).format('hh')
+        const minute = moment(count).format('mm')
+        const second = moment(count).format('ss')
+        console.log(`Timer ${title} - remain ${hour} hours ${minute} minutes ${second} seconds...`.green)
+        count -= 1000
       }
     }, 1000)
   }

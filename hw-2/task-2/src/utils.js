@@ -13,8 +13,8 @@ function getArgs() {
 
 function getSecondsToTime(arr) {
   return arr.map(item => {
-    const timeTo = moment(item, 'hh-DD-MM-YYYY').valueOf() / 1000
-    const now = moment().unix()
+    const timeTo = moment(item, 'hh-DD-MM-YYYY').valueOf()
+    const now = moment()
 
     return timeTo - now
   })
