@@ -1,8 +1,9 @@
 const colors = require('colors')
 const moment = require('moment')
+const { getFormatTimeString } = require('./utils')
 
 class Handler {
-  static setTimer(payload) {
+  static setTimer (payload) {
     const title = payload.title
     let count = Number(payload.count)
 
@@ -11,14 +12,12 @@ class Handler {
         console.log(`Timer ${title} finish`.red)
         clearInterval(intervalId)
       } else {
-        const hour = moment(count).format('hh')
-        const minute = moment(count).format('mm')
-        const second = moment(count).format('ss')
-        console.log(`Timer ${title} - remain ${hour} hours ${minute} minutes ${second} seconds...`.green)
+        console.log(`Timer ${title} - осталось ${getFormatTimeString(count)}`.green)
         count -= 1000
       }
     }, 1000)
   }
+
 }
 
-module.exports = {Handler}
+module.exports = { Handler }
