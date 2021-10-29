@@ -4,7 +4,11 @@
   "description": "По ссылке вы найдете файл с логами запросов к серверу весом более 2 Гб. Напишите программу, которая находит в этом файле все записи с ip-адресами 89.123.1.41 и 34.48.240.111, а также сохраняет их в отдельные файлы с названием “%ip-адрес%_requests.log”.",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "node src/index.js 127.0.0.1",
+    "test-1": "node src/index.js 127.1.0.1",
+    "test-2": "node src/index.js 127.0.1.1",
+    "test-3": "node src/index.js 127.0.1.1 127.1.0.1"
   },
   "keywords": [],
   "author": "",
