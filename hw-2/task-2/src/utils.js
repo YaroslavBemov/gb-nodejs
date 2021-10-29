@@ -14,6 +14,10 @@ function getArgs() {
 function getSecondsToTime(arr) {
   return arr.map(item => {
     const timeTo = moment(item, 'hh-DD-MM-YYYY').valueOf()
+    if (isNaN(timeTo)) {
+      console.log('Invalid argument')
+      process.exit(1)
+    }
     const now = moment()
 
     return timeTo - now
