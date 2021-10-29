@@ -12,19 +12,24 @@ function getArgs() {
 }
 
 function getSecondsToTime(arr) {
-  return arr.map(item => {
-    const timeTo = moment(item, 'hh-DD-MM-YYYY').valueOf()
-    if (isNaN(timeTo)) {
-      console.log('Invalid argument')
-      process.exit(1)
-    }
-    const now = moment()
+  if (Array.isArray(arr)) {
+    return arr.map(item => {
+      const timeTo = moment(item, 'hh-DD-MM-YYYY').valueOf()
+      if (isNaN(timeTo)) {
+        console.log('Invalid argument in "getSecondsToTime"')
+        process.exit(1)
+      }
+      const now = moment()
 
-    return timeTo - now
-  })
+      return timeTo - now
+    })
+  }
+
+  console.log('Invalid argument in "getSecondsToTime"')
+  process.exit(1)
 }
 
-function getFormatTimeString (timestamp) {
+function getFormatTimeString(timestamp) {
   const year = moment.duration(timestamp).years()
   const month = moment.duration(timestamp).months()
   const day = moment.duration(timestamp).days()
