@@ -9,7 +9,7 @@
     "example-3": "node src/index.js hello 34-68-72-21"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yaroslav Bemov <yaroslav.bemov@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0",
