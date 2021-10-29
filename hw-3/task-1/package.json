@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "node src/index.js 127.0.0.1",
-    "test-1": "node src/index.js 127.1.0.1",
-    "test-2": "node src/index.js 127.0.1.1",
-    "test-3": "node src/index.js 127.0.1.1 127.1.0.1"
+    "example": "node src/index.js 89.123.1.41 34.48.240.111"
   },
   "keywords": [],
   "author": "",
