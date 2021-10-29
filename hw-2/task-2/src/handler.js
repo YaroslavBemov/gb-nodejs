@@ -1,5 +1,4 @@
 const colors = require('colors')
-const moment = require('moment')
 const { getFormatTimeString } = require('./utils')
 
 class Handler {
