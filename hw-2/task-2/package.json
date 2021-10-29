@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-1": "node src/index.js 23-31-10-2021",
-    "start-2": "node src/index.js 23-31-10-2021 23-30-11-2021",
-    "start-3": "node src/index.js hello 34-68-72-21"
+    "example-1": "node src/index.js 12-29-10-2021",
+    "example-2": "node src/index.js 23-31-10-2021 23-30-11-2021",
+    "example-3": "node src/index.js hello 34-68-72-21"
   },
   "keywords": [],
   "author": "",
