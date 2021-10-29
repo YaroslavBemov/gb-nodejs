@@ -12,7 +12,7 @@ class Handler {
         console.log(`Timer ${title} finish`.red)
         clearInterval(intervalId)
       } else {
-        console.log(`Timer ${title} - осталось ${getFormatTimeString(count)}`.green)
+        console.log(`Timer ${title} - осталось: ${getFormatTimeString(count)}`.green)
         count -= 1000
       }
     }, 1000)
